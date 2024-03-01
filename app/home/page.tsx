@@ -5,19 +5,33 @@ const PageLayout = () => {
   return (
     <div>
       {/* Navbar */}
-      <nav className="flex justify-between items-center py-4 px-6 bg-gray-200 text-gray-700">
-        <div className="flex items-center">
-          <span className="text-xl font-bold">90000 Hours</span>
+      <nav className="bg-white px-6 py-4 shadow-md">
+      <div className="flex justify-between">
+        <div className="flex space-x-4">
+          <div>
+            <a href="#" className="text-2xl font-bold text-gray-900">80000 HOURS</a>
+          </div>
+          <div className="hidden md:flex items-center space-x-1">
+            <a href="#" className="py-2 px-3 text-gray-700 hover:text-gray-900">Start here</a>
+            <a href="#" className="py-2 px-3 text-gray-700 hover:text-gray-900">Career guide ▼</a>
+            {/* ... other primary navigation links */}
+          </div>
         </div>
-        <div className="flex">
-          <a href="#" className="px-4 py-2 hover:bg-gray-300 rounded">Start here</a>
-          <a href="#" className="px-4 py-2 hover:bg-gray-300 rounded">Career guide</a>
-          {/* Add more navigation items here */}
+        <div className="flex items-center space-x-1">
+          <a href="#" className="py-2 px-3 text-gray-700 hover:text-gray-900">Get 1-1 advice</a>
+          <button className="px-3 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Search</button>
         </div>
-        <div className="flex">
-          <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Get 1-1 advice</button>
-        </div>
-      </nav>
+      </div>
+      <div className="md:hidden flex items-center">
+        {/* Mobile menu button */}
+      </div>
+      <div className="flex space-x-4 mt-3">
+        <a href="#" className="text-sm text-gray-600 hover:text-gray-900">Home</a>
+        <span className="text-sm text-gray-500">›</span>
+        <a href="#" className="text-sm text-gray-600 hover:text-gray-900">World problems</a>
+      </div>
+    </nav>
+
 
       {/* Hero section */}
       <div className="relative h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px]"> {/* Adjust the height as needed */}
